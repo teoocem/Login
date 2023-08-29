@@ -1,0 +1,27 @@
+﻿@model List<Login.Models.Product>
+
+
+
+
+    <table>
+        <tr>
+        <td>urun ıd</td>
+        <td>urun adı</td>
+        <td>urun tanımı</td>
+        <td>urun fiyata</td>
+        </tr>
+   
+
+      @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>@item.ProductID</td>
+            <td>@item.ProductName</td>
+            <td>@item.Description</td>
+            <td>@item.Price</td>
+        </tr>
+    }
+    </table>
+    
+
