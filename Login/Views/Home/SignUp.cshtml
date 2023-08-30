@@ -1,37 +1,32 @@
 ﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
 @{
+    Layout = null;
 }
-<!DOCTYPE html>
-<html>
-    <body>
+@model User
+
         <form asp-action="SignUp" asp-controller="Home" method="post" >
             <div>
                 <label>Ad</label>
-                <input type="text" placeholder="Adınızı Giriniz."/>
+                <input type="text" placeholder="Adınızı Giriniz." asp-for="Ad"/>
             </div>
                 <label> Soyad</label>
-                <input type="text" placeholder="Soyadınızı Giriniz."/>
+                <input type="text" placeholder="Soyadınızı Giriniz." asp-for="Soyad"/>
             <div>
                 <label>Yas</label>
-                <input type="text" placeholder="Yaşınızı Giriniz."/>
+                <input type="text" placeholder="Yaşınızı Giriniz." asp-for="Yas"/>
             </div>
             <div>
                 <label>Kullanıcı Adınızı giriniz.</label>
-                <input type="text" placeholder="Kullanıcı adı giriniz."/>
+                <input type="text" placeholder="Kullanıcı adı giriniz." asp-for="UserName"/>
             </div>
             <div>
                 <label>Sifre</label>
-                <input type="password" placeholder="Şifre giriniz."/>
+                <input type="password" placeholder="Şifre giriniz." asp-for="Password"/>
 
             </div>
             <button>Kaydet</button>
             <div>
-                <
+                
             </div>
             
         </form>
-    </body>
-</html>

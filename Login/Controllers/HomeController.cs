@@ -21,6 +21,7 @@ namespace Login.Controllers
         {
             return View();
         }
+        
 
         public IActionResult urunListesi()
         {

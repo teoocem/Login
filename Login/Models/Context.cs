@@ -13,8 +13,7 @@ namespace Login.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-C78N896;database=BijuteriDB;trusted_connection" +
-                "=true;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("server=.;database=BijuteriDB;trusted_connection=true;TrustServerCertificate=true;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
